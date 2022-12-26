@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escrita Criativa</title>
+
+    <!--- custom css link-->
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="./css/style2.css">
+
+    <script>
+        function Enviar() {
+
+            var nome = document.getElementById("nomeid");
+
+            if (nome.value != "") {
+                alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+            }
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo1">
+                <img src="images/logo3.png"></img>
+            </div>
+            <ul class="nav-menu">
+                <li>
+                    <a href="index.html">Página principal</a>
+                </li>
+                <li>
+                    <a href="dicas4.html">Dicas importantes</a>
+                </li>
+                <li>
+                    <a href="escreva4.html">Escreva</a>
+                </li>
+                <li>
+                    <a href="curso4.html">Cursos</a>
+                </li>
+                <li>
+                    <a href="contactos4.html">Contactos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="article-index">
+            <h1>Entre em contacto conosco</h1>
+            <p>Procure-nos em nossas redes sociais! 👋</p>
+
+            <div class="redes-sociais1">
+                <ul>
+                    <li><a href="https://www.facebook.com"><img src="images/facebook.png" width="35px"
+                                height="30px"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com"><img src="images/instagram.png" width="35px"
+                                height="30px"></a>
+                    </li>
+                    <li><a href="https://www.twitter.com"><img src="images/twitter.png" width="35px" height="30px"></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="article-index">
+            <p>Estamos aqui:</p>
+
+            <div class="contact-map">
+                <iframe id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=fortaleza&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                    scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
+
+        <div class="article-index">
+
+            <form id="meu_form">
+
+                <h4>Deixe-nos uma mensagem</h4>
+
+                <input type="text" id="nomeid" placeholder="Nome completo" required="required" name="nome" />
+                <label for="nome">Nome</label>
+
+                <input type="email" id="emailid" placeholder="Seu email" name="email" />
+                <label for="email">Email</label>
+
+                <textarea placeholder="Deixe sua opinião"></textarea>
+
+                <input type="submit" class="button" onclick="Enviar();" value="Enviar" />
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-text">
+            <h5>Direitos reservados - Ilana Falcão - 2022</h5>
+        </div>
+        <div class="redes-sociais">
+            <ul>
+                <li><a href="https://www.facebook.com"><img src="images/facebook.png" width="35px" height="30px"></a>
+                </li>
+                <li><a href="https://www.instagram.com"><img src="images/instagram.png" width="35px" height="30px"></a>
+                </li>
+                <li><a href="https://www.twitter.com"><img src="images/twitter.png" width="35px" height="30px"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
